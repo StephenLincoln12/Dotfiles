@@ -12,17 +12,17 @@ hi Visual ctermfg=NONE ctermbg=238 cterm=NONE guifg=NONE guibg=#444444 gui=NONE
 hi CursorLine ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#2f2f2f gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#2f2f2f gui=NONE
 hi ColorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#2f2f2f gui=NONE
-hi LineNr ctermfg=244 ctermbg=236 cterm=NONE guifg=#838586 guibg=#2f2f2f gui=NONE
+hi LineNr ctermfg=7 ctermbg=236 cterm=NONE guifg=#838586 guibg=#2f2f2f gui=NONE
 hi VertSplit ctermfg=240 ctermbg=240 cterm=NONE guifg=#575858 guibg=#575858 gui=NONE
 hi MatchParen ctermfg=167 ctermbg=NONE cterm=underline guifg=#e74c3c guibg=NONE gui=underline
 hi StatusLine ctermfg=231 ctermbg=240 cterm=NONE guifg=#ecf0f1 guibg=#575858 gui=bold
 hi StatusLineNC ctermfg=231 ctermbg=240 cterm=NONE guifg=#ecf0f1 guibg=#575858 gui=NONE
 hi Pmenu ctermfg=41 ctermbg=NONE cterm=NONE guifg=#2ecc71 guibg=NONE gui=NONE
 hi PmenuSel ctermfg=NONE ctermbg=238 cterm=NONE guifg=NONE guibg=#444444 gui=NONE
-hi Search term=reverse cterm=NONE ctermfg=15 ctermbg=196 gui=bold guifg=#f7f3ff guibg=#e14d42
+hi Search term=reverse cterm=NONE ctermfg=16 ctermbg=39 gui=bold guifg=#f7f3ff guibg=#e14d42
 hi IncSearch term=reverse cterm=NONE ctermfg=16 ctermbg=39 gui=bold guifg=#000000 guibg=#6c71c4
 hi Directory ctermfg=62 ctermbg=NONE cterm=NONE guifg=#6c71c4 guibg=NONE gui=NONE
-hi Folded ctermfg=220 ctermbg=234 cterm=NONE guifg=#606060 guibg=#1a1a1a gui=NONE
+hi Folded ctermfg=241 ctermbg=234 cterm=NONE guifg=#606060 guibg=#1a1a1a gui=NONE
 
 hi Normal ctermfg=231 ctermbg=234 cterm=NONE guifg=#ecf0f1 guibg=#1a1a1a gui=NONE
 hi Boolean ctermfg=62 ctermbg=NONE cterm=NONE guifg=#6c71c4 guibg=NONE gui=NONE
@@ -49,13 +49,13 @@ hi PreProc ctermfg=167 ctermbg=NONE cterm=NONE guifg=#e74c3c guibg=NONE gui=bold
 hi Special ctermfg=62 ctermbg=NONE cterm=NONE guifg=#6c71c4 guibg=NONE gui=NONE
 hi SpecialKey ctermfg=22 ctermbg=236 cterm=NONE guifg=#f1530f guibg=#1a1a1a gui=NONE
 hi Statement ctermfg=167 ctermbg=NONE cterm=NONE guifg=#e74c3c guibg=NONE gui=bold
-hi StorageClass ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3498db guibg=NONE gui=NONE
+hi StorageClass ctermfg=38 ctermbg=NONE cterm=NONE guifg=#3498db guibg=NONE gui=NONE
 hi String ctermfg=220 ctermbg=NONE cterm=NONE guifg=#f1c40f guibg=NONE gui=NONE
 hi Structure ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3498db guibg=NONE gui=bold
 hi Tag ctermfg=41 ctermbg=NONE cterm=NONE guifg=#2ecc71 guibg=NONE gui=NONE
 hi Title ctermfg=231 ctermbg=NONE cterm=NONE guifg=#ecf0f1 guibg=NONE gui=bold
 hi Todo ctermfg=220 ctermbg=NONE cterm=inverse,bold guifg=#606060 guibg=NONE gui=inverse,bold,italic
-hi Type ctermfg=41 ctermbg=NONE cterm=NONE guifg=#2ecc71 guibg=NONE gui=NONE
+hi Type ctermfg=38 ctermbg=NONE cterm=NONE guifg=#2ecc71 guibg=NONE gui=NONE
 hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
 hi SpellBad term=reverse ctermfg=167 ctermbg=224 gui=undercurl guisp=Red
 hi rubyClass ctermfg=167 ctermbg=NONE cterm=NONE guifg=#e74c3c guibg=NONE gui=bold
@@ -104,6 +104,23 @@ hi cssClassName ctermfg=41 ctermbg=NONE cterm=NONE guifg=#2ecc71 guibg=NONE gui=
 hi cssValueLength ctermfg=62 ctermbg=NONE cterm=NONE guifg=#6c71c4 guibg=NONE gui=NONE
 hi cssCommonAttr ctermfg=41 ctermbg=NONE cterm=NONE guifg=#2ecc71 guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+
+" Python customizations
+hi link pythonDocstring Comment
+hi pythonDefinition ctermfg=38 ctermbg=NONE cterm=NONE guifg=#6c71c4 guibg=NONE gui=NONE
+hi link pythonParameters pythonStatement
+hi link pythonSelf pythonStatement
+hi link pythonBuiltin pythonStatement
+hi link pythonOperators pythonStatement
+
+" C customizations
+hi cType ctermfg=38 ctermbg=NONE cterm=NONE guifg=#6c71c4 guibg=NONE gui=NONE
+hi link cStorageClass cType
+hi link cCustomFunc Function 
+hi link cParameters pythonStatement 
+
+" Highlight operators
+hi link operator pythonStatement
 
 " GitGutter Customizations
 hi SignColumn ctermfg=244 ctermbg=236 guifg=#838586 guibg=#2f2f2f

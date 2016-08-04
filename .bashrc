@@ -5,9 +5,30 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# User specific aliases and functions
+# Exports
 export TERM="screen-256color"
-alias ll="ls -l"
+# Use vim for editing things
+export EDITOR="/usr/bin/vim"
+export VISUAL="/usr/bin/vim"
+export SUDO_EDITOR="/usr/bin/vim"
 
+# User specific aliases
+# Not all systems have ll
+alias ll="ls -alh"
+# I do this more often than I like
+alias pyton="python"
+# sudo !!
+alias work='sudo $(fc -ln -1)'
+# multiple ls aliases because I mistype these far too often
+alias sl='ls'
+alias s='ls'
+alias l='ls'
+# to make editing of these dot files easier
+alias vimrc='vim ~/.vimrc'
+alias bashrc='vim ~/.bashrc'
+# Make sure that ls will display colors of files and such
+alias ls='ls --color=auto'
+
+# Make a nice prompt
 force_color_prompt=yes
 export PS1="\[\033[38;5;27m\]\u\[$(tput sgr0)\]\[\033[38;5;1m\]@\h\[$(tput sgr0)\]\[\033[38;5;2m\]\w\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
