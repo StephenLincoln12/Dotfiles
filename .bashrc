@@ -18,7 +18,8 @@ alias ll="ls -alh"
 # I do this more often than I like
 alias pyton="python"
 # sudo !!
-alias work='sudo $(fc -ln -1)'
+alias fuck='sudo $(fc -ln -1)'
+alias yolo='sudo'
 # multiple ls aliases because I mistype these far too often
 alias sl='ls'
 alias s='ls'
@@ -28,6 +29,8 @@ alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
 # Make sure that ls will display colors of files and such
 alias ls='ls --color=auto'
+# Make life slightly easier when leaving
+alias e='exit'
 
 # Make a nice prompt
 force_color_prompt=yes

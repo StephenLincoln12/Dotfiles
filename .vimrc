@@ -54,7 +54,7 @@ colorscheme brogrammer
 " vim tab color settings to make tabs better (and to fit in with tmux colors)
 :hi TabLineFill ctermfg=234 ctermbg=234
 :hi TabLine ctermfg=7 ctermbg=234
-:hi TabLineSel ctermfg=7 ctermbg=38
+:hi TabLineSel ctermfg=7 ctermbg=32
 " }}}
 
 " Folding for this file {{{
