@@ -1,5 +1,16 @@
 set nocompatible
 
+" Color scheme customizations {{{
+" One color scheme to rule them all!
+filetype plugin on
+syntax on
+colorscheme brogrammer
+" vim tab color settings to make tabs better (and to fit in with tmux colors)
+:hi TabLineFill ctermfg=234 ctermbg=234
+:hi TabLine ctermfg=7 ctermbg=234
+:hi TabLineSel ctermfg=7 ctermbg=32
+" }}}
+
 " Key Remappings{{{
 " So that I can move between the extremely long SQL (and other) strings that I write
 nnoremap j gj
@@ -46,15 +57,6 @@ set foldenable
 set foldlevelstart=10
 set foldnestmax=10
 set foldmethod=indent
-" }}}
-
-" Color scheme customizations {{{
-" One color scheme to rule them all!
-colorscheme brogrammer
-" vim tab color settings to make tabs better (and to fit in with tmux colors)
-:hi TabLineFill ctermfg=234 ctermbg=234
-:hi TabLine ctermfg=7 ctermbg=234
-:hi TabLineSel ctermfg=7 ctermbg=32
 " }}}
 
 " Folding for this file {{{

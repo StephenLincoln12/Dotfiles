@@ -6,13 +6,16 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # Exports
-export TERM="screen-256color"
 # Use vim for editing things
 export EDITOR="/usr/bin/vim"
 export VISUAL="/usr/bin/vim"
 export SUDO_EDITOR="/usr/bin/vim"
 
 # User specific aliases
+# Take my environment with me when I sudo
+alias sudo="sudo -E"
+# Make sure that ls will display colors of files and such
+alias ls='ls --color=auto'
 # Not all systems have ll
 alias ll="ls -alh"
 # I do this more often than I like
@@ -27,11 +30,9 @@ alias l='ls'
 # to make editing of these dot files easier
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
-# Make sure that ls will display colors of files and such
-alias ls='ls --color=auto'
 # Make life slightly easier when leaving
 alias e='exit'
 
 # Make a nice prompt
 force_color_prompt=yes
-export PS1="\[\033[38;5;27m\]\u\[$(tput sgr0)\]\[\033[38;5;1m\]@\h\[$(tput sgr0)\]\[\033[38;5;2m\]\w\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+export PS1="\[\033[38;5;27m\]\u\[$(tput sgr0)\]\[\033[38;5;1m\]@\h\[$(tput sgr0)\]\[\033[38;5;2m\]\w \\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
