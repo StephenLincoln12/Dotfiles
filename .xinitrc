@@ -1,4 +1,4 @@
 xbindkeys
-xautolock -time 1 -locker "lock" &
+xautolock -time 5 -locker "lock" &
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 exec i3

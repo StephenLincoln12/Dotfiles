@@ -9,8 +9,6 @@ amixer
 pulseaudio-alsa
 alsa-utils
 lxappearance
-scrot
-imagemagick
 xautolock
 i3blocks
 locate
@@ -20,3 +18,5 @@ dbus
 python-dbus
 upower
 wget
+xrandr
+ffmpeg
