@@ -5,6 +5,7 @@ set nocompatible
 filetype plugin on
 syntax on
 colorscheme brogrammer
+set colorcolumn=80
 " vim tab color settings to make tabs better (and to fit in with tmux colors)
 :hi TabLineFill ctermfg=234 ctermbg=234
 :hi TabLine ctermfg=7 ctermbg=234
@@ -23,6 +24,8 @@ inoremap jk <Esc>
 map <F3> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">" . " FG:" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg#")<CR>
 " Use tn to create a new tab
 ca tn tabnew
+" Use sudo to be able to save when I didn't open something as root
+ca w!! w !sudo tee %
 " }}}
 
 " Searching {{{
