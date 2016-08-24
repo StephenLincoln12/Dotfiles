@@ -10,6 +10,13 @@ set colorcolumn=80
 :hi TabLineFill ctermfg=234 ctermbg=234
 :hi TabLine ctermfg=7 ctermbg=234
 :hi TabLineSel ctermfg=7 ctermbg=32
+" Highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
 " }}}
 
 " Key Remappings{{{
@@ -53,6 +60,8 @@ set shiftwidth=4
 set autoindent
 " Highlight the entire line my cursor is on
 :set cursorline
+" Highlight 80 character line limit
+:set colorcolumn=80
 " }}}
 
 " Enable Folding {{{
