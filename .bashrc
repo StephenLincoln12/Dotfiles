@@ -10,8 +10,12 @@ fi
 export EDITOR="/usr/bin/vim"
 export VISUAL="/usr/bin/vim"
 export SUDO_EDITOR="/usr/bin/vim"
+<<<<<<< HEAD
 # export TERM="xterm-256color"
 
+=======
+export TERM=xterm-256color
+>>>>>>> 9c92dd5243ca2d2a2f1ff6c6b8639ba3ffcfe440
 
 # User specific aliases
 # Take my environment with me when I sudo
@@ -34,8 +38,11 @@ alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
 # Make life slightly easier when leaving
 alias e='exit'
+<<<<<<< HEAD
 # TMux alias for color fix
 alias tmux="tmux -2"
+=======
+>>>>>>> 9c92dd5243ca2d2a2f1ff6c6b8639ba3ffcfe440
 
 # Make a nice prompt
 force_color_prompt=yes
