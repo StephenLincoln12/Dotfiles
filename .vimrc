@@ -17,11 +17,8 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
-<<<<<<< HEAD
 set t_Co=256
 
-=======
->>>>>>> 9c92dd5243ca2d2a2f1ff6c6b8639ba3ffcfe440
 " }}}
 
 " Key Remappings{{{
@@ -38,7 +35,6 @@ map <F3> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<
 ca tn tabnew
 " Use sudo to be able to save when I didn't open something as root
 ca w!! w !sudo tee %
-<<<<<<< HEAD
 " Auto close in visual
 map :() xi(<Esc>pa)<Esc>
 map :'' xi'<Esc>pa'<Esc>
@@ -46,8 +42,6 @@ map :"" xi"<Esc>pa"<Esc>
 map :[] xi[<Esc>pa]<Esc>
 map :{} xi{<Esc>pa}<Esc>
 
-=======
->>>>>>> 9c92dd5243ca2d2a2f1ff6c6b8639ba3ffcfe440
 " }}}
 
 " Searching {{{
@@ -62,12 +56,9 @@ set ignorecase
 set wildmenu
 " Always show the tab menu (and yes I really do want tabs)
 :set showtabline=-1
-<<<<<<< HEAD
-=======
 " Remember how I left the file when I close it
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
->>>>>>> 9c92dd5243ca2d2a2f1ff6c6b8639ba3ffcfe440
 " }}}
 
 " Line and spacing options {{{
