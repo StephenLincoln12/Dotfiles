@@ -1,0 +1,4 @@
+xterm*background: black
+xterm*foreground: white
+XTerm*termName: xterm-256color
+XTerm*faceName:inconsolata:pixelsize=16
